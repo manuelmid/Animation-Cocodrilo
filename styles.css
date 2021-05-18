@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: radial-gradient(circle at 100% 0%, #ffdc00 0, #ffca00 12.5%, #ffb600 25%, #ffa100 37.5%, #ff8a08 50%, #f17418 62.5%, #e46121 75%, #d94f28 87.5%, #ce402e 100%);
+}
+
+#caja{
+    height: 100vh;
+    width: 1000px;
+    margin: 0px auto;
+
+    background: url("babo-sprite.png");
+
+    animation: anima 800ms steps(11) infinite;
+}
+
+@keyframes anima {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -11000px;
+    }
+}
+
+.L{
+    display: block;
+    position: absolute;
+    margin-top: 690px;
+    margin-left: -200px;
+    color: black;
+
+    font-family: cursive;
+    font-size: 40px;
+
+    /* animation: parrafo2 3s infinite linear; */
+    animation: gira 2s linear;
+}
+
+.R{
+    display: block;
+    position: absolute;
+    margin-top: 690px;
+    margin-left: 900px;
+    color: black;
+
+    font-family: cursive;
+    font-size: 40px;
+
+    /* animation: parrafo 3s infinite linear; */
+    animation: gira 2s linear;
+}
+
+
+
+@keyframes parrafo {
+    0%{
+        color: #ffdc00;
+    }
+    50%{
+        color: #ce402e;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes parrafo2 {
+    0%{
+        color: black;
+    }
+    50%{
+        color: #ce402e;
+    }
+    100%{
+        color: #ffdc00;
+    }
+}
+
+@keyframes gira {
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}
