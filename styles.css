@@ -8,7 +8,7 @@ body{
 }
 
 #caja{
-    height: 100vh;
+    height: 605px;
     width: 545px;
     margin: 0px auto;
 
@@ -17,6 +17,22 @@ body{
     animation: anima 800ms steps(11) infinite;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.R{
+    text-align: center;
+    font-family: cursive;
+    font-size: 35px;
+
+    /* animation: parrafo 3s infinite linear; */
+    animation: gira 2s linear;
+}
+
+
+/*Animaciones*/
 @keyframes anima {
     0%{
         background-position: 0px;
@@ -25,36 +41,6 @@ body{
         background-position: -6000px;
     }
 }
-
-.L{
-    display: block;
-    position: absolute;
-    margin-top: 80vh;
-    margin-left: -245px;
-    color: black;
-
-    font-family: cursive;
-    font-size: 40px;
-
-    /* animation: parrafo2 3s infinite linear; */
-    animation: gira 2s linear;
-}
-
-.R{
-    display: block;
-    position: absolute;
-    margin-top: 80vh;
-    margin-left: 385px;
-    color: black;
-
-    font-family: cursive;
-    font-size: 40px;
-
-    /* animation: parrafo 3s infinite linear; */
-    animation: gira 2s linear;
-}
-
-
 
 @keyframes parrafo {
     0%{
@@ -89,16 +75,16 @@ body{
     }
 }
 
-
+/*Responsive*/
 @media (max-width:768px) {
     .R{
-        font-size: 10px;
+        /* font-size: 10px;
         margin: 0px auto;
         margin-top: 0px;
         margin-left: auto;
         align-items: center;
         margin-left: 215px;
-        margin-top: 10px;
+        margin-top: 10px; */
     }
     .L{
         display: none;
